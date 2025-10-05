@@ -1,0 +1,23 @@
+{
+  "name": "MyLang",
+  "scopeName": "source.mylang",
+  "patterns": [
+    {
+      "name": "meta.directive.slash-line.mylang",
+      "match": "^(\\s*)(\\|)(\\s)(\\/)(\\s)(.*)$",
+      "captures": {
+        "2": { "name": "comment.line.mylang" },
+        "4": { "name": "comment.line.mylang" },
+        "6": { "name": "variable.other.mylang" }
+      }
+    },
+    {
+      "name": "meta.pipe-line.mylang",
+      "match": "^(\\s*)(\\|)(\\s)(.*)$",
+      "captures": {
+        "2": { "name": "comment.line.mylang" },
+        "4": { "name": "variable.other.mylang" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "mylang-syntax",
+  "displayName": "MyLang Syntax",
+  "description": "Ultra-simple syntax coloring for MyLang",
+  "version": "0.0.1",
+  "publisher": "you",
+  "engines": { "vscode": "*" },
+  "categories": ["Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "mylang",
+        "aliases": ["MyLang", "mylang"],
+        "extensions": [".mlg"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mylang",
+        "scopeName": "source.mylang",
+        "path": "./syntaxes/mylang.tmLanguage.json"
+      }
+    ]
+  }
+}

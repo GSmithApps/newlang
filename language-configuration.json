@@ -1,0 +1,8 @@
+{
+  "comments": {
+    "lineComment": ""   // intentionally empty; we don't want default comment behavior
+  },
+  "brackets": [],
+  "autoClosingPairs": [],
+  "surroundingPairs": []
+}
