@@ -3,9 +3,10 @@
   "displayName": "MyLang Syntax",
   "description": "Ultra-simple syntax coloring for MyLang",
   "version": "0.0.1",
-  "publisher": "you",
+  "publisher": "Grant Smith",
   "engines": { "vscode": "*" },
-  "categories": ["Languages"],
+  "categories": ["Programming Languages"],
+  "repository": {"url": "https://github.com/GSmithApps/newlang"},
   "contributes": {
     "languages": [
       {
