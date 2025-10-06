@@ -3,20 +3,24 @@
   "scopeName": "source.mylang",
   "patterns": [
     {
-      "name": "meta.directive.slash-line.mylang",
-      "match": "^(\\s*)(\\|)(\\s)(\\/)(\\s)(.*)$",
+      "name": "meta.initial-pipe.mylang",
+      "match": "^(\\s*)(\\|)(\\s)",
       "captures": {
-        "2": { "name": "comment.line.mylang" },
-        "4": { "name": "comment.line.mylang" },
-        "6": { "name": "variable.other.mylang" }
+        "2": { "name": "initial_pipe.mylang" }
+      }
+    },
+        {
+      "name": "meta.directive.slash-line.mylang",
+      "match": "^\\s*\\|\\s*(.*)*",
+      "captures": {
+        "1": { "name": "variable.other.mylang" }
       }
     },
     {
-      "name": "meta.pipe-line.mylang",
-      "match": "^(\\s*)(\\|)(\\s)(.*)$",
+      "name": "meta.slash.mylang",
+      "match": "(\\s*)(\\/)(\\s)",
       "captures": {
-        "2": { "name": "comment.line.mylang" },
-        "4": { "name": "variable.other.mylang" }
+        "2": { "name": "keyword.control.mylang" }
       }
     }
   ]

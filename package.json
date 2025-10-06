@@ -2,8 +2,7 @@
   "name": "mylang-syntax",
   "displayName": "MyLang Syntax",
   "description": "Ultra-simple syntax coloring for MyLang",
-  "version": "0.0.1",
-  "publisher": "Grant Smith",
+  "version": "0.0.14",
   "engines": { "vscode": "*" },
   "categories": ["Programming Languages"],
   "repository": {"url": "https://github.com/GSmithApps/newlang"},
@@ -22,6 +21,20 @@
         "scopeName": "source.mylang",
         "path": "./syntaxes/mylang.tmLanguage.json"
       }
-    ]
+    ],
+    "configurationDefaults": {
+      "editor.tokenColorCustomizations": {
+        "[Default Dark Modern]": {
+          "textMateRules": [
+              {
+                "scope": "initial_pipe.mylang", 
+                "settings": {
+                    "foreground": "#414141" 
+                }
+            } 
+          ]
+        }
+      }
+    }
   }
 }
